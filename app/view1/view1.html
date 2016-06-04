@@ -1,1 +1,30 @@
-<p>This is the partial for view 1.</p>
+<p>This is the partial for view 1. {{pu}}</p>
+
+<style>
+	.angular-google-map-container { 
+		height: 400px;
+		width: 80%;
+		margin: 0 auto;
+	}
+</style>
+
+<ui-gmap-google-map 
+	center='map.center' 
+	zoom='map.zoom'>
+
+	<ui-gmap-markers
+		models="randomMarkers" 
+		coords="'self'" 
+		icon="'icon'" 
+		click='markerClick'>  
+
+		<ui-gmap-windows show="show">
+			<div ng-non-bindable>
+				<h3>{{title}}</h3>
+				<p>{{text}}</p>
+			</div>
+     	</ui-gmap-windows>
+
+	</ui-gmap-markers>
+    
+</ui-gmap-google-map>

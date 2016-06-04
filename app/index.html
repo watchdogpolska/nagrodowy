@@ -13,6 +13,14 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <style>
+  	html,body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+  </style>
 </head>
 <body>
   <ul class="menu">
@@ -31,13 +39,18 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
+
+  <script src='bower_components/manual/lodash.js'></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src='bower_components/manual/angular-simple-logger.js'></script>
+  <script src='bower_components/manual/angular-google-maps.js'></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
-  <script src="components/version/interpolate-filter.js"></script>
+  <script src="components/version/interpolate-filter.js"></script> 
+
 </body>
 </html>
