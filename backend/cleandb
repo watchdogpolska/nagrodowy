@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. ./functions
+drop_tables_sql=" \
+drop table wnioski_wniosekhistoria; \
+drop table wnioski_wniosek; \
+drop table wnioski_adresat; \
+drop table wnioski_miasto;"
+
+exec_sql $drop_tables_sql

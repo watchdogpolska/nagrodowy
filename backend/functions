@@ -1,0 +1,5 @@
+
+function exec_sql {
+	query="$*"
+	echo "$query" | mysql nagrodowy -u nagrodowy -ptesttest
+}

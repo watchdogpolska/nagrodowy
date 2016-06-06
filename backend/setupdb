@@ -1,0 +1,24 @@
+#!/bin/sh
+
+. ./functions
+
+insert_cities_sql=" \
+	INSERT INTO wnioski_miasto (id, nazwa, szerokosc_geo, dlugosc_geo) VALUES \
+	(1, 'Warszawa', 52.250934, 21.015869), \
+	(2, 'Szczecin', 53.422817, 14.55817); "
+
+insert_recieviers_sql=" \
+   INSERT INTO wnioski_adresat (id, nazwa, miasto_id, szerokosc_geo, dlugosc_geo) VALUES \
+	(1, 'Urzad Miasta Szczecin', 2, 53.438221, 14.543189), \
+	(2, 'Zachodniopomorski Urzad Wojewodzki', 2, NULL, NULL );"
+
+insert_inquiry_sql=" \
+	INSERT INTO wnioski_wniosek (id, adresat_id, tytul, opis, wniosek_status, wprowadzenie_data, aktualizacja_data) VALUES
+	(1, 1, 'Nagrody za rok 2016', 'Jakis opis - opcjonalny', 'REGISTERED', '2016-06-06 23:15:14', '2016-06-06 23:15:17'),
+	(2, 2, 'Nagrody za rok 2016', '', 'REGISTERED', '2016-06-06 23:15:35', '2016-06-06 23:15:38');"
+
+# CREATE DATABASE nagrodowy CHARACTER SET utf8;
+
+exec_sql $insert_cities_sql
+exec_sql $insert_recieviers_sql
+exec_sql $insert_inquiry_sql
