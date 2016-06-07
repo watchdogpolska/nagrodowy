@@ -36,6 +36,11 @@ angular
 					latitude : 53.554149,
 					longitude : 15.092525
 				},
+				options : {
+					disableDefaultUI : true,
+//					disableDoubleClickZoom : true,
+					zoomControl : true,
+				}
 			};
 
 		//----------------
@@ -47,10 +52,10 @@ angular
 			}
 
 			var iconMatch = {
-				"OPEN" : "map-marker-yellow.png",
-				"IN-PROGRESS" : "map-marker-yellow.png",
-				"CLOSED-SUCCESSFUL" : "map-marker-green.png",
-				"CLOSED-UNSUCCESSFUL" : "map-marker-red.png",
+				"OPEN" : "map-marker-open.png",
+				"IN-PROGRESS" : "map-marker-in-progress.png",
+				"CLOSED-SUCCESSFUL" : "map-marker-closed-success.png",
+				"CLOSED-UNSUCCESSFUL" : "map-marker-closed-failed.png",
 			};
 
 			var ret = {
@@ -79,25 +84,18 @@ angular
 		  		var markers = [];
 		  		for (var i=0, count=data.data.length; i<count; i++) {
 		  			var r = data.data[i];
+		  			var m = "";
+		  			
 		  			if (r.lat != null && r.long != null ) {
-		  				markers.push(createMarker(i, r.status, r.lat, r.long));
+		  				m = createMarker(i+1, r.status, r.lat, r.long);
 		  			} else {
-		  				markers.push(createMarker(i, r.status, r.city.lat, r.city.long));
+		  				m = createMarker(i+1, r.status, r.city.lat, r.city.long);
 		  			}
+		  			
+		  			markers.push(m);
+		  			console.log(m);
 		  		}
 
-
-//		  		_.each(markers, function (marker) {
-//		  		    marker.closeClick = function () {
-//		  		    	console.log(marker);
-//		  		      marker.showWindow = false;
-//		  		      $scope.$evalAsync();
-//		  		    };
-////		  		    marker.onClicked = function () {
-////		  		      onMarkerClicked(marker);
-////		  		    };
-//		  		  });
-		  		
 		  		uiGmapGoogleMapApi.then(function(map) {
 					$scope.map.markers = markers;
 				});
@@ -121,9 +119,9 @@ angular
 			}
 			
 			lastMarker = marker;
-
 			
 			var url = ServiceSettings.url_backend + '/get_marker_details/' + marker.id + '/callback=JSON_CALLBACK'; 
+			console.log(url)
 			$http({method:'JSONP', url: url}).
 				success(function(data) {
 					var d = data.data;
@@ -138,38 +136,5 @@ angular
 			  	error(function(data, status, headers, config) {
 			  		console.log("Failed to load map markers")
 			  	});	
-			
 		}
-
-		// params.map
-		// params.title
-		// params.text
-		// params.position.lat
-		// params.position.lng
-
-//		function addMarker(params) {
-//			return;
-//			var contentString = '<div id="content">'
-//					+ '<div id="siteNotice">' + '</div>'
-//					+ '<h1 id="firstHeading" class="firstHeading">'
-//					+ params.title + '</h1>'
-//					+ '<div id="bodyContent">' + '<p><b>'
-//					+ params.title + '</b> ' + params.text + '</p>'
-//					+ '</div>' + '</div>';
-//
-//			var marker = new google.maps.Marker({
-//				position : params.position,
-//				map : params.map,
-//				title : params.title
-//			});
-//
-//			marker.addListener('click', function() {
-//				var infowindow = new google.maps.InfoWindow({
-//					content : contentString
-//				});
-//				infowindow.open(map, marker);
-//			});
-//		}
-
-		
 	});

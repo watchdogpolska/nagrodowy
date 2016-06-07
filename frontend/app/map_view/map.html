@@ -1,16 +1,7 @@
-<p>This is the partial for view 1. {{url.frontend}}</p>
-
-<style>
-	.angular-google-map-container { 
-		height: 400px;
-		width: 80%;
-		margin: 0 auto;
-	}
-</style>
-
 <ui-gmap-google-map 
 	center='map.center' 
-	zoom='map.zoom'>
+	zoom='map.zoom'
+	options='map.options'>
 
 	<ui-gmap-markers
 		models="map.markers" 
@@ -19,11 +10,20 @@
 		click='markerClick'>  
 
 		<ui-gmap-windows show="true">
-			<div>
-				<div style="width: 100%"> test</div>
-				<h3>{{markerInfo.recipient}} </h3>
-				<h3>{{markerInfo.title}} </h3>
-				<p>{{tytul}}</p>
+			<div id="map-windows-container">
+				<div class="marker-info-help-text">adresat</div>
+				<div class="marker-info-recipient">{{markerInfo.recipient}}</div>
+
+				<div class="marker-info-help-text">sprawa</div>
+				<div class="marker-info-title">{{markerInfo.title}}</div>
+
+				<div class="marker-info-help-text">status</div>
+				<div class="marker-info-status">{{markerInfo.status}}</div>
+
+				<div class="marker-info-help-text">info</div>
+				<div class="marker-info-description">{{markerInfo.description}}</div>
+				
+
 						<!-- <div ng-non-bindable> -->
 			</div>			
      	</ui-gmap-windows> 

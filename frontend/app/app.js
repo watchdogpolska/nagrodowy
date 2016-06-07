@@ -18,7 +18,7 @@ angular.module('myApp', [
     uiGmapGoogleMapApiProvider.configure({
         key: 'AIzaSyCl045jnwaeEHmQIGtSqHAYiSEoOZEQ4vk',
        // v: '3.20', //defaults to latest 3.X anyhow
-        libraries: 'weather,geometry,visualization'
+//        libraries: 'weather,geometry,visualization'
     });
 })
 

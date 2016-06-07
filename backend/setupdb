@@ -21,7 +21,29 @@ insert_inquiry_sql=" \
 	(1, 1, 'Nagrody za rok 2016', 'Jakis opis - opcjonalny', 'OPEN', '2016-06-06 23:15:14', '2016-06-06 23:15:17'),
 	(2, 2, 'Nagrody za rok 2016', '', 'CLOSED-UNSUCCESSFUL', '2016-06-06 23:15:35', '2016-06-06 23:15:38'), \
 	(3, 3, 'Nagrody Warszawa', '', 'CLOSED-SUCCESSFUL', '2016-06-06 23:15:35', '2016-06-06 23:15:38'), \
-	(4, 4, 'Nagrody Krakow', '', 'IN-PROGRESS', '2016-06-06 23:15:35', '2016-06-06 23:15:38'), \
+	(4, 4, 'Nagrody Krakow', 'Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny \
+	Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny Jakis opis - opcjonalny ', 'IN-PROGRESS', '2016-06-06 23:15:35', '2016-06-06 23:15:38'), \
 	(5, 5, 'INVALID TEST - no geo', '', 'OPEN', '2016-06-06 23:15:35', '2016-06-06 23:15:38');"
 
 # CREATE DATABASE nagrodowy CHARACTER SET utf8;

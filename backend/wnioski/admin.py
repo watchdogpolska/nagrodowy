@@ -15,10 +15,11 @@ class WniosekAdmin(admin.ModelAdmin):
                   ('Status', {'fields' : [ ('wniosek_status', 'aktualizacja_data' )]}),
                   ('Dodatkowe', {'fields' : ['opis']})
                 ]
-    list_display = ['tytul', 'adresat', 'wniosek_status', 'aktualizacja_data', 'wprowadzenie_data']
+    list_display = ['id', 'tytul', 'adresat', 'wniosek_status', 'aktualizacja_data', 'wprowadzenie_data']
     
     inlines = [WniosekHistoriaInline]
     search_fields = ['tytul']
+    
     
 class AdresatAdmin(admin.ModelAdmin):
     fieldsets = [ ('Adresat', {'fields' : ['nazwa']}),
