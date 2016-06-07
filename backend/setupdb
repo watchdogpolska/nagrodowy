@@ -51,3 +51,5 @@ insert_inquiry_sql=" \
 exec_sql $insert_cities_sql
 exec_sql $insert_recieviers_sql
 exec_sql $insert_inquiry_sql
+
+# CREATE USER 'nagrodowy'@'localhost' IDENTIFIED BY 'testtest';GRANT USAGE ON *.* TO 'nagrodowy'@'localhost' IDENTIFIED BY 'testtest' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;CREATE DATABASE IF NOT EXISTS nagrodowy CHARACTER SET utf8;GRANT ALL PRIVILEGES ON nagrodowy.* TO 'nagrodowy'@'localhost';
