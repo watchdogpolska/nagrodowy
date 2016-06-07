@@ -2,18 +2,17 @@
 
 angular
 
-.module('myApp.view1', [ 'ngRoute' ])
+.module('myApp.map_view', [ 'ngRoute' ])
 
 .config([ '$routeProvider', function($routeProvider) {
-	$routeProvider.when('/view1', {
-		templateUrl : 'view1/view1.html',
-		controller : 'View1Ctrl'
+	$routeProvider.when('/map_view', {
+		templateUrl : 'map_view/map.html',
+		controller : 'MapViewCtrl'
 	});
 } ])
 
-
 .controller(
-	"View1Ctrl",
+	"MapViewCtrl",
 	function($scope, $http, uiGmapGoogleMapApi, ServiceSettings) {
 		
 		var lastMarker = null;
