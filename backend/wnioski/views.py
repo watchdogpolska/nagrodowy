@@ -26,6 +26,7 @@ def get_map_markers(request, callback):
         adr = wniosek.adresat
         if ( adr.szerokosc_geo != None and adr.dlugosc_geo != None ) or adr.miasto != None :
             arr.append(wniosek.get_map_marker())
+
     return array_to_json(arr,callback)
 
 

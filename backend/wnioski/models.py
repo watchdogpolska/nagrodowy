@@ -61,20 +61,23 @@ class Wniosek(models.Model):
 #         return "%s %s" % ( self.adresat.nazwa, self.info ) # % (self.adresat.nazwa, self.info)
 
     def get_map_marker(self):
-        return {
+        ret = {
             'id'   : self.id,
             'status': self.wniosek_status,
-            'city' : { 
-                      'name' : self.adresat.miasto.nazwa,
-                      'lat'  : self.adresat.miasto.szerokosc_geo,
-                      'long' : self.adresat.miasto.dlugosc_geo 
-                      },
             'lat'  : self.adresat.szerokosc_geo,
             'long' : self.adresat.dlugosc_geo
         }
         
+        if self.adresat.miasto != None :
+            ret['city'] = {   
+                'name' : self.adresat.miasto.nazwa,
+                'lat'  : self.adresat.miasto.szerokosc_geo,
+                'long' : self.adresat.miasto.dlugosc_geo,
+                        }
+        return ret
+        
     def get_map_marker_details(self):
-        return {
+        ret= {
             'id'    : self.id,
             'status': self.wniosek_status,
             'tytul' : self.tytul,
@@ -83,15 +86,24 @@ class Wniosek(models.Model):
 #             'aktualizacja' : self.aktualizacja_data,
             'adresat' : {
                          'nazwa' : self.adresat.nazwa,
-                         'city'  : { 
-                                   'name' : self.adresat.miasto.nazwa,
-                                   'lat'  : self.adresat.miasto.szerokosc_geo,
-                                   'long' : self.adresat.miasto.dlugosc_geo 
-                                   },
+#                          'city'  : { 
+#                                    'name' : self.adresat.miasto.nazwa,
+#                                    'lat'  : self.adresat.miasto.szerokosc_geo,
+#                                    'long' : self.adresat.miasto.dlugosc_geo 
+#                                    },
             },
             'lat'  : self.adresat.szerokosc_geo,
             'long' : self.adresat.dlugosc_geo
         }
+        
+        if self.adresat.miasto != None :
+            ret['adresat']['city'] = {   
+                'name' : self.adresat.miasto.nazwa,
+                'lat'  : self.adresat.miasto.szerokosc_geo,
+                'long' : self.adresat.miasto.dlugosc_geo,
+            }
+        return ret
+        
 
 # -----------------------------
 #

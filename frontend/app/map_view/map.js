@@ -93,7 +93,6 @@ angular
 		  			}
 		  			
 		  			markers.push(m);
-		  			console.log(m);
 		  		}
 
 		  		uiGmapGoogleMapApi.then(function(map) {
@@ -121,7 +120,6 @@ angular
 			lastMarker = marker;
 			
 			var url = ServiceSettings.url_backend + '/get_marker_details/' + marker.id + '/callback=JSON_CALLBACK'; 
-			console.log(url)
 			$http({method:'JSONP', url: url}).
 				success(function(data) {
 					var d = data.data;
@@ -131,7 +129,6 @@ angular
 						description : d.opis,
 						status		: d.status
 					} ;
-					console.log($scope.markerInfo)
 			  	}).
 			  	error(function(data, status, headers, config) {
 			  		console.log("Failed to load map markers")
