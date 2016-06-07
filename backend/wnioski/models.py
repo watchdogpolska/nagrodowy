@@ -44,10 +44,10 @@ class Adresat(models.Model):
 
 class Wniosek(models.Model):
     WNIOSEK_STATUS = (
-        ('REGISTERED',          'Wprowadzony'),
-        ('IN-PROGRESS',         'W toku'),
-        ('DONE-SUCCESSFUL',     'Zakończone pomyślnie'),
-        ('DONE-UNSUCCESSFUL',   'Zakończone niepomyślnie')
+        ('OPEN',               'Wprowadzony'),
+        ('IN-PROGRESS',        'W toku'),
+        ('CLOSED-SUCCESSFUL',  'Zakończone pomyślnie'),
+        ('CLOSED-UNSUCCESSFUL','Zakończone niepomyślnie')
     )
     
     adresat         = models.ForeignKey(Adresat)
@@ -60,13 +60,38 @@ class Wniosek(models.Model):
 #     def __unicode__(self):
 #         return "%s %s" % ( self.adresat.nazwa, self.info ) # % (self.adresat.nazwa, self.info)
 
-    def as_dict(self):
+    def get_map_marker(self):
         return {
-            'id'        : self.id,
-            'adresat'   : self.adresat.nazwa,
-            'info'      : self.info
+            'id'   : self.id,
+            'status': self.wniosek_status,
+            'city' : { 
+                      'name' : self.adresat.miasto.nazwa,
+                      'lat'  : self.adresat.miasto.szerokosc_geo,
+                      'long' : self.adresat.miasto.dlugosc_geo 
+                      },
+            'lat'  : self.adresat.szerokosc_geo,
+            'long' : self.adresat.dlugosc_geo
         }
-
+        
+    def get_map_marker_details(self):
+        return {
+            'id'    : self.id,
+            'status': self.wniosek_status,
+            'tytul' : self.tytul,
+            'opis'  : self.opis,
+#             'wprowadzony' : self.wprowadzenie_data,
+#             'aktualizacja' : self.aktualizacja_data,
+            'adresat' : {
+                         'nazwa' : self.adresat.nazwa,
+                         'city'  : { 
+                                   'name' : self.adresat.miasto.nazwa,
+                                   'lat'  : self.adresat.miasto.szerokosc_geo,
+                                   'long' : self.adresat.miasto.dlugosc_geo 
+                                   },
+            },
+            'lat'  : self.adresat.szerokosc_geo,
+            'long' : self.adresat.dlugosc_geo
+        }
 
 # -----------------------------
 #
