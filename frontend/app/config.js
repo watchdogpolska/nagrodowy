@@ -1,6 +1,6 @@
 'use strict';
 
-angular
+angular.module('myApp')
 .factory('ServiceSettings', function() {
   return {
 	  url_backend  : 'http://pu.polishpilots.uk/backend/map',
