@@ -61,7 +61,7 @@
 .status-closed-failed, 
 .status-closed-mostly-failed,
 .status-closed-ok, 
-.status-closed-moslty-ok {
+.status-closed-mostly-ok {
 	width : 80%;
 	height: auto;
 	margin: 10px auto 16px;
@@ -69,7 +69,8 @@
 	font-style: italic;
 	border-radius: 15px 50px 30px 50px;
    	text-align: center;
-}
+/*    	text-shadow: 1px 1px 0px #5d5d5d;
+ */}
 
 .status-in-progress,
 .status-in-progress-partially-ok,
@@ -87,7 +88,7 @@
 }
 
 .status-closed-ok, 
-.status-closed-moslty-ok {
+.status-closed-mostly-ok {
 	color: #6bad01;
 	border: 1px solid #6bad01;
 	background-color: rgba(107, 173, 1, 0.1);
