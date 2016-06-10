@@ -22,6 +22,43 @@ angular
 //		    frontend : ServiceSettings.url_frontend
 //		};
 
+		const StatusMap = {
+				"IN-PROGRESS" : { 
+					icon: "map-marker-in-progress.png", 
+					text: "Sprawa w toku", 
+					css: "status-in-progress" },
+					
+				"IN-PROGRESS-PARTIALLY-FAILED" : { 
+					icon: "map-marker-in-progress-partially-failed.png", 
+					text: "Sprawa w toku - opinia częściowo negatywna",
+					css: "status-in-progress-partially-failed" },
+					
+				"IN-PROGRESS-PARTIALLY-SUCCESSFUL" : { 
+					icon: "map-marker-in-progress-partially-successful.png", 
+					text: "Sprawa w toku - opinia częściowo pozytywna",
+					css: "status-in-progress-partially-ok" },
+					
+				"CLOSED-SUCCESSFUL" : { 
+					icon: "map-marker-closed-successful.png", 
+					text: "Sprawa zakończona pomyślnie",
+					css: "status-closed-ok" },
+					
+				"CLOSED-MOSTLY-SUCCESSFUL" : { 
+					icon: "map-marker-closed-mostly-successful.png", 
+					text: "Sprawa zakończona głównie pomyślnie",
+					css: "status-closed-mostly-ok" },
+				
+				"CLOSED-FAILED" : { 
+					icon: "map-marker-closed-failed.png", 
+					text: "Sprawa zakończona niepomyślnie",
+					css: "status-closed-failed" },
+					
+				"CLOSED-MOSTLY-FAILED" : { 
+					icon: "map-marker-closed-mostly-failed.png", 
+					text: "Sprawa zakończona głównie niepomyślnie",
+					css: "status-closed-mostly-failed" },
+			};
+		
 		//----------------
 		// Map Setup
 		
@@ -51,23 +88,12 @@ angular
 				idKey = "id";
 			}
 
-			var iconMatch = {
-				"OPEN" : "map-marker-open.png",
-				"IN-PROGRESS" : "map-marker-in-progress.png",
-				"CLOSED-SUCCESSFUL" : "map-marker-closed-success.png",
-				"CLOSED-UNSUCCESSFUL" : "map-marker-closed-failed.png",
-			};
-
 			var ret = {
 				latitude : lat,
 				longitude : long,
-				title : 'm' + i,
-				text : 'tral la la',
-				status : "",
 				id : i,
-				click : function(x,y,z) {alert("da");},
-				show : false,
-				icon : ServiceSettings.url_images + '/' + iconMatch[status]
+				// show : false,
+				icon : ServiceSettings.url_images + '/' + StatusMap[status].icon
 			};
 
 			ret[idKey + i] = i;
@@ -123,11 +149,13 @@ angular
 			$http({method:'JSONP', url: url}).
 				success(function(data) {
 					var d = data.data;
+					console.log(d);
 					$scope.markerInfo = {
 						recipient	: d.adresat.nazwa,
-						title 		: d.tytul,
+						title 		: "d.tytul",
 						description : d.opis,
-						status		: d.status
+						status		: StatusMap[d.status].text,
+						css			: StatusMap[d.status].css
 					} ;
 			  	}).
 			  	error(function(data, status, headers, config) {

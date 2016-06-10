@@ -11,14 +11,14 @@ class WniosekHistoriaInline(admin.TabularInline):
     
 
 class WniosekAdmin(admin.ModelAdmin):
-    fieldsets = [ ('Podstawowe dane', {'fields' : ['adresat', 'tytul', 'wprowadzenie_data' ]}),
+    fieldsets = [ ('Podstawowe dane', {'fields' : ['adresat', 'wprowadzenie_data' ]}),
                   ('Status', {'fields' : [ ('wniosek_status', 'aktualizacja_data' )]}),
                   ('Dodatkowe', {'fields' : ['opis']})
                 ]
-    list_display = ['id', 'tytul', 'adresat', 'wniosek_status', 'aktualizacja_data', 'wprowadzenie_data']
+    list_display = ['id', 'adresat', 'wniosek_status', 'aktualizacja_data', 'wprowadzenie_data']
     
     inlines = [WniosekHistoriaInline]
-    search_fields = ['tytul']
+    search_fields = ['adresat']
     
     
 class AdresatAdmin(admin.ModelAdmin):

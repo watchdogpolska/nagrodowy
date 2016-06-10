@@ -44,16 +44,18 @@ class Adresat(models.Model):
 
 class Wniosek(models.Model):
     WNIOSEK_STATUS = (
-        ('OPEN',               'Wprowadzony'),
-        ('IN-PROGRESS',        'W toku'),
-        ('CLOSED-SUCCESSFUL',  'Zakończone pomyślnie'),
-        ('CLOSED-UNSUCCESSFUL','Zakończone niepomyślnie')
+        ('IN-PROGRESS',                     'W toku'),
+        ('IN-PROGRESS-PARTIALLY-FAILED',    'W toku - opinia częściowo negatywna'),
+        ('IN-PROGRESS-PARTIALLY-SUCCESSFUL','W toku - opinia częściowo pozytywna'),
+        ('CLOSED-SUCCESSFUL',               'Zakończone pomyślnie'),
+        ('CLOSED-MOSTLY-SUCCESSFUL',        'Zakończone głównie pomyślnie'),
+        ('CLOSED-FAILED',                   'Zakończone negatywnie'),
+        ('CLOSED-MOSTLY-FAILED',            'Zakończone głównie negatywnie'),
     )
     
     adresat         = models.ForeignKey(Adresat)
-    tytul           = models.CharField(max_length=128)
     opis            = models.TextField(blank=True)
-    wniosek_status  = models.CharField(max_length=32, default='REGISTERED', choices=WNIOSEK_STATUS)
+    wniosek_status  = models.CharField(max_length=64, default='IN-PROGRESS', choices=WNIOSEK_STATUS)
     wprowadzenie_data  = models.DateTimeField('Data wprowadzenia', default=datetime.now())
     aktualizacja_data  = models.DateTimeField('Data ostatniej aktualizacji', blank=True, null=True )
 
@@ -80,7 +82,6 @@ class Wniosek(models.Model):
         ret= {
             'id'    : self.id,
             'status': self.wniosek_status,
-            'tytul' : self.tytul,
             'opis'  : self.opis,
 #             'wprowadzony' : self.wprowadzenie_data,
 #             'aktualizacja' : self.aktualizacja_data,

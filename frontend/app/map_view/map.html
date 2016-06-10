@@ -11,20 +11,11 @@
 
 		<ui-gmap-windows show="true">
 			<div id="map-windows-container">
+				<div class="marker-info-status {{markerInfo.css}}">{{markerInfo.status}}</div>
 				<div class="marker-info-help-text">adresat</div>
 				<div class="marker-info-recipient">{{markerInfo.recipient}}</div>
-
-				<div class="marker-info-help-text">sprawa</div>
-				<div class="marker-info-title">{{markerInfo.title}}</div>
-
-				<div class="marker-info-help-text">status</div>
-				<div class="marker-info-status">{{markerInfo.status}}</div>
-
 				<div class="marker-info-help-text">info</div>
 				<div class="marker-info-description">{{markerInfo.description}}</div>
-				
-
-						<!-- <div ng-non-bindable> -->
 			</div>			
      	</ui-gmap-windows> 
 
