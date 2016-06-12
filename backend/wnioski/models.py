@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
 from django.db import models
+import os
 
 # -----------------------------
 #
@@ -8,6 +9,8 @@ from django.db import models
 #----------------
 
 class Miasto(models.Model):
+    class Meta:
+        verbose_name_plural = "Miasta"    
     nazwa           = models.CharField('Miasto', max_length=64)
     szerokosc_geo   = models.FloatField('Szerokość geograficzna', blank=True, null=True)
     dlugosc_geo     = models.FloatField('Długość geograficzna', blank=True, null=True)
@@ -22,13 +25,16 @@ class Miasto(models.Model):
 #----------------
 
 class Adresat(models.Model):
+    class Meta:
+        verbose_name_plural = "Adresaci"
+    
+    def __unicode__(self):
+        return "%s" % (self.nazwa)
+       
     nazwa         = models.CharField('Adresat', unique=True, max_length=128)
     miasto        = models.ForeignKey(Miasto, blank=True, null=True)
     szerokosc_geo = models.FloatField('Szerokość geograficzna', blank=True, null=True)
     dlugosc_geo   = models.FloatField('Długość geograficzna', blank=True, null=True)
-    
-    def __unicode__(self):
-        return "%s" % (self.nazwa)
     
     def as_dict(self):
         return {
@@ -43,6 +49,12 @@ class Adresat(models.Model):
 #----------------
 
 class Wniosek(models.Model):
+    class Meta:
+        verbose_name_plural = "Wnioski"
+            
+    def __unicode__(self):
+            return "%s" % self.adresat.nazwa
+    
     WNIOSEK_STATUS = (
         ('IN-PROGRESS',                     'W toku'),
         ('IN-PROGRESS-PARTIALLY-FAILED',    'W toku - opinia częściowo negatywna'),
@@ -58,9 +70,6 @@ class Wniosek(models.Model):
     wniosek_status  = models.CharField(max_length=64, default='IN-PROGRESS', choices=WNIOSEK_STATUS)
     wprowadzenie_data  = models.DateTimeField('Data wprowadzenia', default=datetime.now())
     aktualizacja_data  = models.DateTimeField('Data ostatniej aktualizacji', blank=True, null=True )
-
-#     def __unicode__(self):
-#         return "%s %s" % ( self.adresat.nazwa, self.info ) # % (self.adresat.nazwa, self.info)
 
     def get_map_marker(self):
         ret = {
@@ -105,6 +114,38 @@ class Wniosek(models.Model):
             }
         return ret
         
+
+# -----------------------------
+#
+# WniosekZalcznik
+#----------------
+
+class WniosekZalacznik(models.Model):
+    class Meta:
+        verbose_name_plural = "Załączniki do wniosków"
+
+    def __unicode__(self):
+        return "%s" % (os.path.basename(str(self.plik)))
+     
+    uploadDir = "."
+    wniosek = models.ForeignKey(Wniosek)
+    opis    = models.TextField(blank=True, max_length=256)
+    plik    = models.FileField(upload_to=uploadDir)
+        
+#     def delete(self, *args, **kwargs):
+#         storage, path = self.plik.storage, self.plik.path
+#         # Delete the model before the file
+#         super(WniosekZalacznik,self).delete(*args, **kwargs)
+#         storage.delete(path)
+
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
+
+@receiver(post_delete, sender=WniosekZalacznik)
+def zalacznik_post_delete_handler(sender, **kwargs):
+    zalacznik = kwargs['instance']
+    storage, path = zalacznik.plik.storage, zalacznik.plik.path
+    storage.delete(path)
 
 # -----------------------------
 #

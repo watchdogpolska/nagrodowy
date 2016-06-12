@@ -1,2 +1,3 @@
 #!/bin/sh
 
+chown .apache backend/storage
