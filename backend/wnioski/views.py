@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 from models import Adresat, Miasto
-from models import Wniosek, WniosekHistoria
+from models import Wniosek, WniosekHistoria, WniosekZalacznik
 import json
 
 def index(request):
@@ -36,6 +36,12 @@ def get_map_markers(request, callback):
  
 def get_marker_details(request, markerId, callback):
     recs = Wniosek.objects.filter(id=markerId)
-    data = recs[0].get_map_marker_details()
+    markerDetails = recs[0].get_map_marker_details()
+    
+    recs = WniosekZalacznik.objects.all().filter(wniosek=markerId)
+    filesDetails = [ obj.get_as_obj() for obj in recs ]
+
+    data = { 'marker' : markerDetails,
+             'files'  : filesDetails }
     
     return array_to_json(data,callback)

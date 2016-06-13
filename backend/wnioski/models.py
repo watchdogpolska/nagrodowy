@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
 from django.db import models
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 import os
 
 # -----------------------------
@@ -132,14 +134,13 @@ class WniosekZalacznik(models.Model):
     opis    = models.TextField(blank=True, max_length=256)
     plik    = models.FileField(upload_to=uploadDir)
         
-#     def delete(self, *args, **kwargs):
-#         storage, path = self.plik.storage, self.plik.path
-#         # Delete the model before the file
-#         super(WniosekZalacznik,self).delete(*args, **kwargs)
-#         storage.delete(path)
-
-from django.db.models.signals import post_delete
-from django.dispatch import receiver
+    def get_as_obj(self):
+        dir, filename = os.path.split(self.plik.path)
+        return {
+                'file'        : filename,
+                'description' : self.opis,
+                'to'          : self.wniosek.adresat.nazwa,
+                }
 
 @receiver(post_delete, sender=WniosekZalacznik)
 def zalacznik_post_delete_handler(sender, **kwargs):

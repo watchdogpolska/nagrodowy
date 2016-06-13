@@ -17,10 +17,11 @@ angular
 		
 		var lastMarker = null;
 		
-//		$scope.url = {
-//		    backend  : ServiceSettings.url_backend,
-//		    frontend : ServiceSettings.url_frontend
-//		};
+		$scope.url = {
+		    backend  : ServiceSettings.url_backend,
+		    frontend : ServiceSettings.url_frontend,
+		    storage	 : ServiceSettings.url_storage
+		};
 
 		const StatusMap = {
 				"IN-PROGRESS" : { 
@@ -135,7 +136,6 @@ angular
 		// Marker Click
 		
 		$scope.markerClick = function(x, y, marker) {
-
 			if ( lastMarker == marker ) 
 				return;
 			
@@ -145,18 +145,27 @@ angular
 			
 			lastMarker = marker;
 			
-			var url = ServiceSettings.url_backend + '/get_marker_details/' + marker.id + '/callback=JSON_CALLBACK'; 
+			var url = ServiceSettings.url_backend + '/get_marker_details/' + marker.id + '/callback=JSON_CALLBACK';
 			$http({method:'JSONP', url: url}).
 				success(function(data) {
-					var d = data.data;
-					console.log(d);
+					var marker = data.data.marker,
+					files = data.data.files;
 					$scope.markerInfo = {
-						recipient	: d.adresat.nazwa,
-						title 		: "d.tytul",
-						description : d.opis,
-						status		: StatusMap[d.status].text,
-						css			: StatusMap[d.status].css
+						recipient   : marker.adresat.nazwa,
+						description : marker.opis,
+						status      : StatusMap[marker.status].text,
+						css	        : StatusMap[marker.status].css,
+						files		: files.length != 0
 					} ;
+					
+					$scope.files = files;
+					$scope.fileVisible = function(id) {
+						return (id < files.length ) ? true : false; 
+					}
+					
+					$scope.file = function(id) {
+						return $scope.files[id];
+					}
 			  	}).
 			  	error(function(data, status, headers, config) {
 			  		console.log("Failed to load map markers")

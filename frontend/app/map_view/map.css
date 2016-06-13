@@ -41,6 +41,7 @@
 .marker-info-status {
 	font-weight: normal;
 }
+
 .marker-info-description {
 	font-weight: normal;
 	font-size: 85%;
@@ -51,7 +52,47 @@
 	overflow: auto;
 	margin-top: 2.5px;
 }
+
+.marker-files-cont {
+	height: auto;
+	min-height: 0px;
+	max-height: 150px;
+	overflow: auto;
+}
+
+.marker-file-cont {
+	width:100%;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+.marker-file-name, 
+.marker-file-description {
+/* 	display: inline;
+ */}
 	
+.marker-file-name {
+	font-weight: bold;
+}
+
+.marker-file-description {
+	font-weight: normal;
+	font-size: 85%;
+	
+}
+
+a.file-download:link,
+a.file-download:hover,
+a.file-download:active,
+a.file-download:visited {
+	color: green;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.file-download:hover {
+	color: #ff3311;
+}
 
 /* Map Window Status div styling - for different statuses types */
 
