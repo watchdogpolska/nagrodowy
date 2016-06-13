@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.map_view',
-  'myApp.view2',
+//  'myApp.view2',
   'myApp.version',
   'uiGmapgoogle-maps'
 ])
