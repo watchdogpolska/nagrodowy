@@ -23,7 +23,7 @@ angular
 		    storage	 : ServiceSettings.url_storage
 		};
 
-		const StatusMap = {
+		var StatusMap = {
 				"IN-PROGRESS" : { 
 					icon: "map-marker-in-progress.png", 
 					text: "Sprawa w toku", 
