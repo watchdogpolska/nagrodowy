@@ -28,7 +28,7 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
-      
+
 # Application definition
 
 INSTALLED_APPS = (
@@ -60,13 +60,13 @@ WSGI_APPLICATION = 'nagrodowy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE'  : 'django.db.backends.mysql',
-        'NAME'    : 'nagrodowy',
-        'USER'    : 'nagrodowy', 
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'nagrodowy',
+        'USER': 'nagrodowy',
         'PASSWORD': 'testtest',
-        'HOST'    : 'localhost'
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'HOST': 'localhost'
+        #         'ENGINE': 'django.db.backends.sqlite3',
+        #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -80,15 +80,15 @@ LANGUAGE_CODE = 'pl'
 TIME_ZONE = 'Europe/Warsaw'
 
 # LANGUAGES = ( ('pl', ('Polish')) )
-            
+
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
 
-MEDIA_ROOT="/var/www/virtuals/nagrodowy/backend/storage"
-MEDIA_URL="/storage/"
+MEDIA_ROOT = "/var/www/virtuals/nagrodowy/backend/storage"
+MEDIA_URL = "/storage/"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
