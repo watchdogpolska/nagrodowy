@@ -1,0 +1,1445 @@
+[
+{
+    "model": "wnioski.miasto",
+    "pk": 1,
+    "fields": {
+        "nazwa": "Warszawa",
+        "szerokosc_geo": 52.250934,
+        "dlugosc_geo": 21.015869
+    }
+},
+{
+    "model": "wnioski.miasto",
+    "pk": 2,
+    "fields": {
+        "nazwa": "Szczecin",
+        "szerokosc_geo": 53.422817,
+        "dlugosc_geo": 14.55817
+    }
+},
+{
+    "model": "wnioski.miasto",
+    "pk": 3,
+    "fields": {
+        "nazwa": "Krak\u00f3w",
+        "szerokosc_geo": 50.060348,
+        "dlugosc_geo": 19.941009
+    }
+},
+{
+    "model": "wnioski.miasto",
+    "pk": 4,
+    "fields": {
+        "nazwa": "\u0141\u00f3d\u017a",
+        "szerokosc_geo": null,
+        "dlugosc_geo": null
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 1,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Jelenia G\u00f3ra",
+        "miasto": null,
+        "szerokosc_geo": 50.903095,
+        "dlugosc_geo": 15.734713
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 2,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Legnica",
+        "miasto": null,
+        "szerokosc_geo": 51.206583,
+        "dlugosc_geo": 16.162372
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 3,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski Wroc\u0142awia",
+        "miasto": null,
+        "szerokosc_geo": 51.110673,
+        "dlugosc_geo": 17.037829
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 4,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Wa\u0142brzychu",
+        "miasto": null,
+        "szerokosc_geo": 50.76777,
+        "dlugosc_geo": 16.282523
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 5,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Bydgoszczy",
+        "miasto": null,
+        "szerokosc_geo": 53.120221,
+        "dlugosc_geo": 17.99403
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 6,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Grudzi\u0105dzu",
+        "miasto": null,
+        "szerokosc_geo": 53.493531,
+        "dlugosc_geo": 18.748483
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 7,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Torunia",
+        "miasto": null,
+        "szerokosc_geo": 53.012696,
+        "dlugosc_geo": 18.604033
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 8,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta W\u0142oc\u0142awek",
+        "miasto": null,
+        "szerokosc_geo": 52.653465,
+        "dlugosc_geo": 19.070383
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 9,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Bia\u0142a Podlaska",
+        "miasto": null,
+        "szerokosc_geo": 52.034369,
+        "dlugosc_geo": 23.117976
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 10,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Che\u0142m",
+        "miasto": null,
+        "szerokosc_geo": 51.133922,
+        "dlugosc_geo": 23.469425
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 11,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Lublin",
+        "miasto": null,
+        "szerokosc_geo": 51.247655,
+        "dlugosc_geo": 22.565628
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 12,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Zamo\u015b\u0107",
+        "miasto": null,
+        "szerokosc_geo": 50.717861,
+        "dlugosc_geo": 23.252638
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 13,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta \u0141odzi",
+        "miasto": null,
+        "szerokosc_geo": 51.764487,
+        "dlugosc_geo": 19.457613
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 14,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Piotrkowa Trybunalskiego",
+        "miasto": null,
+        "szerokosc_geo": 51.404905,
+        "dlugosc_geo": 19.68954
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 15,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Skierniewice",
+        "miasto": null,
+        "szerokosc_geo": 51.956769,
+        "dlugosc_geo": 20.141625
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 16,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Krakowa",
+        "miasto": null,
+        "szerokosc_geo": 50.058794,
+        "dlugosc_geo": 19.936934
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 17,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Nowego S\u0105cza",
+        "miasto": null,
+        "szerokosc_geo": 49.6251,
+        "dlugosc_geo": 20.690982
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 18,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Tarnowa",
+        "miasto": null,
+        "szerokosc_geo": 50.01573,
+        "dlugosc_geo": 20.986594
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 19,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Ostro\u0142\u0119ki",
+        "miasto": null,
+        "szerokosc_geo": 53.084096,
+        "dlugosc_geo": 21.567219
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 20,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta P\u0142ocka",
+        "miasto": null,
+        "szerokosc_geo": 52.54528,
+        "dlugosc_geo": 19.684687
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 21,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Radomiu",
+        "miasto": null,
+        "szerokosc_geo": 51.401508,
+        "dlugosc_geo": 21.158005
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 22,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Siedlce",
+        "miasto": null,
+        "szerokosc_geo": 52.167654,
+        "dlugosc_geo": 22.27374
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 23,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Sto\u0142ecznego Warszawy",
+        "miasto": null,
+        "szerokosc_geo": 52.243542,
+        "dlugosc_geo": 21.007305
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 24,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Opola",
+        "miasto": null,
+        "szerokosc_geo": 50.668484,
+        "dlugosc_geo": 17.922523
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 25,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Krosna",
+        "miasto": null,
+        "szerokosc_geo": 49.683923,
+        "dlugosc_geo": 21.771089
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 26,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Przemy\u015blu",
+        "miasto": null,
+        "szerokosc_geo": 49.782597,
+        "dlugosc_geo": 22.76887
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 27,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Rzeszowa",
+        "miasto": null,
+        "szerokosc_geo": 50.037362,
+        "dlugosc_geo": 22.004035
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 28,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Tarnobrzega",
+        "miasto": null,
+        "szerokosc_geo": 50.571807,
+        "dlugosc_geo": 21.669941
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 29,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Bia\u0142ymstoku",
+        "miasto": null,
+        "szerokosc_geo": 53.134115,
+        "dlugosc_geo": 23.172685
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 30,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w \u0141om\u017cy",
+        "miasto": null,
+        "szerokosc_geo": 53.178888,
+        "dlugosc_geo": 22.082605
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 31,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Suwa\u0142kach",
+        "miasto": null,
+        "szerokosc_geo": 54.098529,
+        "dlugosc_geo": 22.927852
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 32,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Gda\u0144sku",
+        "miasto": null,
+        "szerokosc_geo": 54.351461,
+        "dlugosc_geo": 18.641034
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 33,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Gdyni",
+        "miasto": null,
+        "szerokosc_geo": 54.50957,
+        "dlugosc_geo": 18.53884
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 34,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w S\u0142upsku",
+        "miasto": null,
+        "szerokosc_geo": 54.464742,
+        "dlugosc_geo": 17.026312
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 35,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Sopotu",
+        "miasto": null,
+        "szerokosc_geo": 54.440029,
+        "dlugosc_geo": 18.564829
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 36,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Bielsku-Bia\u0142ej",
+        "miasto": null,
+        "szerokosc_geo": 49.821776,
+        "dlugosc_geo": 19.050789
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 37,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Bytomiu",
+        "miasto": null,
+        "szerokosc_geo": 50.350225,
+        "dlugosc_geo": 18.911882
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 38,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Chorz\u00f3w",
+        "miasto": null,
+        "szerokosc_geo": 50.297471,
+        "dlugosc_geo": 18.953237
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 39,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Cz\u0119stochowy",
+        "miasto": null,
+        "szerokosc_geo": 50.809663,
+        "dlugosc_geo": 19.116058
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 40,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w D\u0105browie G\u00f3rniczej",
+        "miasto": null,
+        "szerokosc_geo": 50.33089,
+        "dlugosc_geo": 19.206548
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 41,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Jastrz\u0119bie-Zdr\u00f3j",
+        "miasto": null,
+        "szerokosc_geo": 49.952794,
+        "dlugosc_geo": 18.611854
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 42,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Jaworznie",
+        "miasto": null,
+        "szerokosc_geo": 50.199549,
+        "dlugosc_geo": 19.275344
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 43,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Mys\u0142owice",
+        "miasto": null,
+        "szerokosc_geo": 50.24086,
+        "dlugosc_geo": 19.141527
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 44,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Piekary \u015al\u0105skie",
+        "miasto": null,
+        "szerokosc_geo": 50.375011,
+        "dlugosc_geo": 18.944343
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 45,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Ruda \u015al\u0105ska",
+        "miasto": null,
+        "szerokosc_geo": 50.286018,
+        "dlugosc_geo": 18.875011
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 46,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Rybnika",
+        "miasto": null,
+        "szerokosc_geo": 50.093768,
+        "dlugosc_geo": 18.542111
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 47,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Sosnowcu",
+        "miasto": null,
+        "szerokosc_geo": 50.278223,
+        "dlugosc_geo": 19.133753
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 48,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w \u015awi\u0119toch\u0142owicach",
+        "miasto": null,
+        "szerokosc_geo": 50.285237,
+        "dlugosc_geo": 18.931374
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 49,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Tychy",
+        "miasto": null,
+        "szerokosc_geo": 50.114674,
+        "dlugosc_geo": 18.996909
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 50,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Zabrzu",
+        "miasto": null,
+        "szerokosc_geo": 50.308476,
+        "dlugosc_geo": 18.785432
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 51,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta \u017bory",
+        "miasto": null,
+        "szerokosc_geo": 50.04516,
+        "dlugosc_geo": 18.694688
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 52,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Gliwicach",
+        "miasto": null,
+        "szerokosc_geo": 50.296365,
+        "dlugosc_geo": 18.669057
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 53,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Katowice",
+        "miasto": null,
+        "szerokosc_geo": 50.258513,
+        "dlugosc_geo": 19.021706
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 54,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Siemianowice \u015al\u0105skie",
+        "miasto": null,
+        "szerokosc_geo": 50.305508,
+        "dlugosc_geo": 19.028511
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 55,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Kielce",
+        "miasto": null,
+        "szerokosc_geo": 50.871843,
+        "dlugosc_geo": 20.630796
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 56,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Elbl\u0105gu",
+        "miasto": null,
+        "szerokosc_geo": 54.161163,
+        "dlugosc_geo": 19.408588
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 57,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Olsztyna",
+        "miasto": null,
+        "szerokosc_geo": 53.778758,
+        "dlugosc_geo": 20.479866
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 58,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Koszalinie",
+        "miasto": null,
+        "szerokosc_geo": 54.190955,
+        "dlugosc_geo": 16.181209
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 59,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Szczecin",
+        "miasto": null,
+        "szerokosc_geo": 53.43824,
+        "dlugosc_geo": 14.5432
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 60,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta \u015awinouj\u015bcie",
+        "miasto": null,
+        "szerokosc_geo": 53.913938,
+        "dlugosc_geo": 14.238928
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 61,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Kaliszu",
+        "miasto": null,
+        "szerokosc_geo": 51.762647,
+        "dlugosc_geo": 18.089829
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 62,
+    "fields": {
+        "nazwa": "Urz\u0105d Miejski w Koninie",
+        "miasto": null,
+        "szerokosc_geo": 52.214172,
+        "dlugosc_geo": 18.255355
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 63,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Leszna",
+        "miasto": null,
+        "szerokosc_geo": 51.849315,
+        "dlugosc_geo": 16.570765
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 64,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Poznania",
+        "miasto": null,
+        "szerokosc_geo": 52.406342,
+        "dlugosc_geo": 16.935365
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 65,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Gorzowa Wielkopolskiego",
+        "miasto": null,
+        "szerokosc_geo": 52.731734,
+        "dlugosc_geo": 15.242509
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 66,
+    "fields": {
+        "nazwa": "Urz\u0105d Miasta Zielona G\u00f3ra",
+        "miasto": null,
+        "szerokosc_geo": 51.940334,
+        "dlugosc_geo": 15.5143
+    }
+},
+{
+    "model": "wnioski.adresat",
+    "pk": 67,
+    "fields": {
+        "nazwa": "Starostwo Powiatowe w Boles\u0142awcu",
+        "miasto": null,
+        "szerokosc_geo": 51.262319,
+        "dlugosc_geo": 15.568434
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 1,
+    "fields": {
+        "adresat": 1,
+        "opis": "Sprawa w toku, wezwali\u015bmy do wydania decyzji o odmowie udost\u0119pnienia informacji",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 2,
+    "fields": {
+        "adresat": 2,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 3,
+    "fields": {
+        "adresat": 3,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce wnioskowali\u015bmy o informacj\u0119 przetworzon\u0105",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 4,
+    "fields": {
+        "adresat": 4,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji - tylko co do tych pracownik\u00f3w samorz\u0105dowych, kt\u00f3rzy s\u0105 obowi\u0105zani do sk\u0142adania o\u015bwiadcze\u0144 maj\u0105tkowych",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 5,
+    "fields": {
+        "adresat": 5,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 6,
+    "fields": {
+        "adresat": 6,
+        "opis": "Sprawa w toku, wydano decyzj\u0119 o odmowie udost\u0119pnienia informacji publicznej. SKO j\u0105 uchyli\u0142o, sprawa trafi\u0142a do ponownego rozpoznania",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 7,
+    "fields": {
+        "adresat": 7,
+        "opis": "Sprawa w toku, brak odpowiedzi na wniosek o udost\u0119pnienie informacji",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 8,
+    "fields": {
+        "adresat": 8,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji - podano og\u00f3lne uzasadnienie przyznania nagr\u00f3d co do wszystkich pracownik\u00f3w",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 9,
+    "fields": {
+        "adresat": 9,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji - co do cz\u0119\u015bci pracownik\u00f3w podano konkretne informacje, co do pozosta\u0142ych - tylko og\u00f3lne informacje",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 10,
+    "fields": {
+        "adresat": 10,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji - co do cz\u0119\u015bci udost\u0119niono, nie udost\u0119pniono informacji co do os\u00f3b niepe\u0142ni\u0105cych funkcje publiczne",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 11,
+    "fields": {
+        "adresat": 11,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowo udost\u0119pniono w BIP!, co do \u017c\u0105dania udost\u0119pnienia informacji o pracownikach samorz\u0105dowych niepe\u0142ni\u0105cych funkcji publicznych - wezwano do przeslania podpisanego wniosku",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 12,
+    "fields": {
+        "adresat": 12,
+        "opis": "Sprawa zako\u0144czona pozytywnie, udost\u0119pniono informacje o nagrodzonych (cho\u0107 uzasadinenie przyznania nagr\u00f3d jest og\u00f3lne)",
+        "wniosek_status": "CLOSED-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 13,
+    "fields": {
+        "adresat": 13,
+        "opis": "Sprawa w toku, przed\u0142u\u017cono termin do udost\u0119pnienia do 21.04.2016, z uwagi na brak odpowiedzi skierowali\u015bmy skarg\u0119 na bezczynno\u015b\u0107",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 14,
+    "fields": {
+        "adresat": 14,
+        "opis": "Sprawa w toku,nie udost\u0119pniono informacji z uwagi na ochron\u0119 danych osobowych. Skierowali\u015bmy skarg\u0119 na bezczynno\u015b\u0107",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 15,
+    "fields": {
+        "adresat": 15,
+        "opis": "Sprawa w toku. Udost\u0119pniono cz\u0119\u015b\u0107iowo informacje o osobach pe\u0142ni\u0105cych funkcje publiczne (cho\u0107 bez szczeg\u00f3\u0142owych uzasadnie\u0144). Urz\u0105d uzna\u0142, \u017ce informacje o nagrodach dla os\u00f3b niepe\u0142ni\u0105cych funkcji publicznych to nie jest informacja publiczna",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 16,
+    "fields": {
+        "adresat": 16,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji, co do cz\u0119sci - uznanie, \u017ce przedmiotem wniosku jest informacja przetworzona - z\u0142o\u017cyli\u015bmy odwolanie od decyzji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 17,
+    "fields": {
+        "adresat": 17,
+        "opis": "",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 18,
+    "fields": {
+        "adresat": 18,
+        "opis": "Informacja cz\u0119\u015bciowa, udost\u0119pniono list\u0119 nagrodzonych, ale brak informacji o uzasadnieniu otrzymania nagrody",
+        "wniosek_status": "CLOSED-MOSTLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 19,
+    "fields": {
+        "adresat": 19,
+        "opis": "???",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 20,
+    "fields": {
+        "adresat": 20,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pniowe informacji, co do pozosta\u0142ej cz\u0119\u015bci - decyzja o odmowie udost\u0119pnienia (o osobach niepe\u0142ni\u0105cych funkcji publ).",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 21,
+    "fields": {
+        "adresat": 21,
+        "opis": "Sprawa w toku, z\u0142o\u017cono skarg\u0119 na bezczynno\u015b\u0107",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 22,
+    "fields": {
+        "adresat": 22,
+        "opis": "Sprawa w toku, informacja wymijaj\u0105ca - zamiast konkretnych informacji, przes\u0142ano dane og\u00f3lne",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 23,
+    "fields": {
+        "adresat": 23,
+        "opis": "Sprawa zako\u0144czona pozytywnie - brak przyznanych nagr\u00f3d na podstawie art.36 ust. 6 ustawy o pracownikach samorz\u0105dowych",
+        "wniosek_status": "CLOSED-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 24,
+    "fields": {
+        "adresat": 24,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji - co do tych, kt\u00f3rzy pe\u0142ni\u0105 funkcje publiczne (ale brak uzasadnienia), odm\u00f3wiono udost\u0119pnienia informacji o pracownikach niepe\u0142ni\u0105cych funkcji publ. ",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 25,
+    "fields": {
+        "adresat": 25,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowo udost\u0119pniono informacje o tych, kt\u00f3rzy pe\u0142ni\u0105 funkcje publiczne i tych, kt\u00f3rzy ich nie pe\u0142ni\u0105, ale wyrazili zgod\u0119 na ujawnienie informacji. Wydano decyzj\u0119 o odmowie, od kt\u00f3rej z\u0142o\u017cyli\u015bmy odwo\u0142anie.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 26,
+    "fields": {
+        "adresat": 26,
+        "opis": "",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 27,
+    "fields": {
+        "adresat": 27,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji (cho\u0107 og\u00f3lne uzasadnienie przyznania nagr\u00f3d), cz\u0119\u015bciowo odmowa udost\u0119pnienia informacji publicznej (co do pracownik\u00f3w samorz\u0105dowych niepe\u0142ni\u0105cych funkcji publicznych) - z\u0142o\u017cyli\u015bmy odwo\u0142anie.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 28,
+    "fields": {
+        "adresat": 28,
+        "opis": "Sprawa w toku, cz\u0119ciowe udost\u0119pnienie informacji, odmowa udost\u0119pnienia informacji co do os\u00f3b, niepe\u0142ni\u0105cych funckje publiczne - z\u0142o\u017cyli\u015bmy odwo\u0142ane, SKO podtrzyma\u0142o, wys\u0142ali\u015by skarg\u0119 do s\u0105du. Urz\u0105d nie posiada informacji o uzasadnieniach przyznaniach nagr\u00f3d.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 29,
+    "fields": {
+        "adresat": 29,
+        "opis": "??? Sprawa w toku, odpowied\u017a wymijaj\u0105ca, przekazano tylko og\u00f3lne dane. Skarga na bezczynno\u015b\u0107.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 30,
+    "fields": {
+        "adresat": 30,
+        "opis": "Informacja cz\u0119\u015bciowa, udost\u0119pniono co do cz\u0119\u015bci informacje o nagrodzonych i kwotach (ale nie o uzasadnieniach), w pozosta\u0142ym zakresie udzielono informacji wymijaj\u0105cej - przekazano og\u00f3lne dane o przyznanych nagrodach.",
+        "wniosek_status": "CLOSED-MOSTLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 31,
+    "fields": {
+        "adresat": 31,
+        "opis": "Sprawa w toku - urz\u0105d uzna\u0142, \u017ce \"dane dotycz\u0105ce imion i nazwisk oraz wynagrodzenia wszystkich pracownik\u00f3w\" nie mog\u0105 by\u0107 udost\u0119pnione, gdy\u017c nie s\u0105 to informacje publiczne ",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 32,
+    "fields": {
+        "adresat": 32,
+        "opis": "???",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 33,
+    "fields": {
+        "adresat": 33,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce stowarzyszenie nie ma prawa do informacji publicznej. Z\u0142o\u017cyli\u015bmy: 1) skarg\u0119 na bezczynno\u015b\u0107, 2) zawiadomienie o mo\u017cliwo\u015bci pope\u0142nienia przest\u0119pstwa",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 34,
+    "fields": {
+        "adresat": 34,
+        "opis": "Sprawa w toku, brak odpowiedzi na wniosek o udost\u0119pnienie informacji",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 35,
+    "fields": {
+        "adresat": 35,
+        "opis": "Sprawa w toku, udzielono odpowiedzi wymajaj\u0105cej, gdy\u017c przekazano og\u00f3lne dane, a ponadto uznano, \u017ce stowarzyszenie nie ma prawa do informacji. Z\u0142o\u017cyli\u015bmy 1) skarg\u0119 na bezczynno\u015b\u0107 i 2) zawiadomienie o mo\u017cliwo\u015bci pope\u0142nienia przest\u0119pstwa",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 36,
+    "fields": {
+        "adresat": 36,
+        "opis": "Sprawa w toku, udost\u0119niono informacji cz\u0119\u015bciowej, co do pozosta\u0142ych pracownik\u00f3w. Z\u0142o\u017cyli\u015bmy skarg\u0119 na bezczynno\u015b\u0107 w zwi\u0105zku z brakiem wydania decyzji odmownej.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 37,
+    "fields": {
+        "adresat": 37,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce przedmiotem wniosku \"wynagrodzenia pracownik\u00f3w nie s\u0105 informacja publiczn\u0105\". Z\u0142o\u017cyli\u015bmy skarg\u0119 na bezczynno\u015b\u0107",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 38,
+    "fields": {
+        "adresat": 38,
+        "opis": "Sprawa w toku, brak odpowiedzi na wniosek o udost\u0119pnienie informacji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 39,
+    "fields": {
+        "adresat": 39,
+        "opis": "Sprawa zako\u0144czona pozytywnie - przekazano informajc\u0119, \u017ce \u017caden pracownik samorz\u0105dowy nie otrzyma\u0142 we wskazanym okresie nagr\u00f3d",
+        "wniosek_status": "CLOSED-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 40,
+    "fields": {
+        "adresat": 40,
+        "opis": "Sprawa w toku, odm\u00f3wiono udost\u0119pnienia informacji publicznej, z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji odmownej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 41,
+    "fields": {
+        "adresat": 41,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce wnosili\u015bmy o udost\u0119pnienie informajci przetworzonej i \u017ce nie zrealizowali\u015bmy przes\u0142anki szczeg\u00f3lnej istotno\u015bci dla interesu publicznego. Z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 42,
+    "fields": {
+        "adresat": 42,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji, cz\u0119sciowo odmowa - co do tych pracownik\u00f3w samorz\u0105dowych, kt\u00f3rzy nie posiadaj\u0105 upowa\u017cnienia do wydania decyzji administracyjnych",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 43,
+    "fields": {
+        "adresat": 43,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce wnioskowali\u015bmy o informacj\u0119 przetworzon\u0105. Z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 44,
+    "fields": {
+        "adresat": 44,
+        "opis": "Sprawa zako\u0144czona pozytywnie, przeslano list\u0119 nagrodzonych pracownik\u00f3w samorz\u0105dowych wraz z kworami i uzasadnieniem przyznania nagr\u00f3d.",
+        "wniosek_status": "CLOSED-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 45,
+    "fields": {
+        "adresat": 45,
+        "opis": "Sprawa w toku, informacja wymiaj\u0105ca - udzielono list\u0119 nagrodzonych pracownik\u00f3w samorz\u0105dowych, osobno wykaz kwot nagr\u00f3d (ale nie w odniesieniu do konkretnych pracownik\u00f3w). Co do uzasadnie\u0144 przyznania nagr\u00f3d wskazano og\u00f3lnie, \u017ce \"Za zaanga\u017cowanie w wype\u0142nianiu obowi\u0105zk\u00f3w s\u0142u\u017cbowych, przejawianie inicjatywy w pracy i podnoszenie jej wydajno\u015bci).\"",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 46,
+    "fields": {
+        "adresat": 46,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce przedmiotem wniosku by\u0142o udost\u0119pnienie informacji przetworzonej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 47,
+    "fields": {
+        "adresat": 47,
+        "opis": "Sprawa w roku, cz\u0119sciowo udost\u0119pniono informacje publiczn\u0105, cz\u0119\u015bciowo odm\u00f3wiono jej udost\u0119pnienia.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 48,
+    "fields": {
+        "adresat": 48,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce wniosek dotyczy informacji przetworzonej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 49,
+    "fields": {
+        "adresat": 49,
+        "opis": "Sprawa w toku",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 50,
+    "fields": {
+        "adresat": 50,
+        "opis": "",
+        "wniosek_status": "IN-PROGRESS",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 51,
+    "fields": {
+        "adresat": 51,
+        "opis": "Sprawa w toku, odm\u00f3wiono udost\u0119pnienia informacji publicznej, z\u0142o\u017cyli\u015bmy skarg\u0119 do s\u0105du",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 52,
+    "fields": {
+        "adresat": 52,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowe udost\u0119pnienie informacji - tylko wobec tych pracownik\u00f3w, kt\u00f3rzy pe\u0142ni\u0105 funkcje publiczne, w odniesieniu do pozosta\u0142ych podano tylko list\u0119 nagrodzonych",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 53,
+    "fields": {
+        "adresat": 53,
+        "opis": "Sprawa w toku, brak odpowiedzi na wniosek o udost\u0119pnienie informacji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 54,
+    "fields": {
+        "adresat": 54,
+        "opis": "Sprawa w toku, cz\u0119sciowo udost\u0119pniono informacj\u0119, cz\u0119\u015bciowo odm\u00f3wiono jej udost\u0119pnienia - w tym zakresie z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji odmownej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 55,
+    "fields": {
+        "adresat": 55,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowo udost\u0119pniono informacje dot. pracownik\u00f3w samorz\u0105dowych pe\u0142ni\u0105cych funkcje publiczne, co do pozosta\u0142ych - udzielono tylko og\u00f3lnych informacji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 56,
+    "fields": {
+        "adresat": 56,
+        "opis": "Sprawa w toku, w cz\u0119\u015b\u0107i udost\u0119pniono informacje, odm\u00f3wiono udost\u0119pnienia informacji dot. pracownik\u00f3w samorz\u0105dowych niepe\u0142ni\u0105cych funkcji publicznych - z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji odm9ownej.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 57,
+    "fields": {
+        "adresat": 57,
+        "opis": "Sprawa w roku, cz\u0119\u015bciowo udost\u0119pniono informacje (o tych, kt\u00f3rzy pe\u0142ni\u0105 funkcje publiczne), w pozosta\u0142ym zakresie udzielono tylko og\u00f3lnych informacji.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 58,
+    "fields": {
+        "adresat": 58,
+        "opis": "Sprawa w toku, w cz\u0119\u015bci udost\u0119pniono informacje o urz\u0119dnikach pe\u0142ni\u0105cych funkcje publiczne ,co do pozosta\u0142ych urz\u0119dnik\u00f3w - odm\u00f3wiono udzielenia informacji. Z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji odmownej.",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 59,
+    "fields": {
+        "adresat": 59,
+        "opis": "Sprawa w toku, urz\u0105d uzna\u0142, \u017ce przedmiotem wniosku by\u0142o udost\u0119pnienie informacji przetworzonej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 60,
+    "fields": {
+        "adresat": 60,
+        "opis": "Sprawa w toku, w cz\u0119\u015bci udost\u0119pniono informacje o pracownikach samorz\u0105dowych pe\u0142ni\u0105cych funkcje publiczne, w pozosta\u0142ym zakresie udzielono tylko og\u00f3lnych informacji",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 61,
+    "fields": {
+        "adresat": 61,
+        "opis": "Sprawa w toku, podano tylko og\u00f3lne informacje o nagrodach",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 62,
+    "fields": {
+        "adresat": 62,
+        "opis": "Sprawa w toku, w cz\u0119\u015bci dot. pracownik\u00f3w pe\u0142ni\u0105cych funkcje publiczne udost\u0119pniono informacje, w odniesieniu do pozosta\u0142ych pracownik\u00f3w - odm\u00f3wiono udost\u0119pnienia informacji. Z\u0142o\u017cyli\u015bmy odwo\u0142anie od decyzji odmownej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 63,
+    "fields": {
+        "adresat": 63,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowo udost\u0119pniono informacje dot. pracownik\u00f3w samorz\u0105dowych pe\u0142ni\u0105cych funkcje publiczne, w pozosta\u0142ym zakresie wydano decyzj\u0119 o odmowie. Z\u0142o\u017cyli\u015bmy od niej odwo\u0142anie, SKO przekaza\u0142o spraw\u0119 do ponownego rozpatrzenia",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 64,
+    "fields": {
+        "adresat": 64,
+        "opis": "Sprawa w toku, cz\u0119\u015bciowo udost\u0119pniono informacje - o nagrodach dla pracownik\u00f3w samorz\u0105dowych pe\u0142ni\u0105cych funkcje publiczne, w pozosta\u0142ym zakresie uznano, \u017ce \u017c\u0105danie nie dotyczy informacji publicznej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-SUCCESSFUL",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 65,
+    "fields": {
+        "adresat": 65,
+        "opis": "Sprawa w toku, udost\u0119pniono konkretne informacje o 4 z 51 pracownik\u00f3w samorz\u0105dowych, w pozosta\u0142ym zakresie wydano decyzj\u0119 administracyjn\u0105 o odmowie udost\u0119pnienia informacji, od ktorej zlo\u017cyli\u015bmy odwo\u0142anie do SKO..",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 66,
+    "fields": {
+        "adresat": 66,
+        "opis": "Sprawa w toku, udzielono wymijaj\u0105cej, og\u00f3lnej odpowiedzi i wskazano, \u017ce \"przepisy Konstytucji i inne uregulowania prawne zawarte, np. w ustawie o dost\u0119pie do informacji publicznej nie przewiduj\u0105 ujawniania tak szczeg\u00f3\u0142owo \"",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+},
+{
+    "model": "wnioski.wniosek",
+    "pk": 67,
+    "fields": {
+        "adresat": 67,
+        "opis": "Sprawa w toku, starostwo uzna\u0142o, \u017ce przedmiotem wniosku by\u0142o udost\u0119pnienie informajci przetworzonej",
+        "wniosek_status": "IN-PROGRESS-PARTIALLY-FAILED",
+        "wprowadzenie_data": "2016-06-06T23:15:14Z",
+        "aktualizacja_data": "2016-06-06T23:15:17Z"
+    }
+}
+]
