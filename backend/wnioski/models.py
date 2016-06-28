@@ -137,4 +137,4 @@ def zalacznik_post_delete_handler(sender, **kwargs):
 class WniosekHistoria(models.Model):
     wniosek = models.ForeignKey(Wniosek)
     zdarzenie = models.TextField(blank=True)
-    data = models.DateTimeField('Data zdarzenia', default=datetime.now())
+    data = models.DateTimeField('Data zdarzenia', default=datetime.now)
