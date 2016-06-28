@@ -29,6 +29,7 @@ class WniosekZalacznikInline(admin.StackedInline):
     }
 
 
+@admin.register(Wniosek)
 class WniosekAdmin(admin.ModelAdmin):
     #     fieldsets = [ ('Podstawowe dane', {'fields' : ['adresat']}),  #, 'wprowadzenie_data' ]}),
     #                   ('Status', {'fields' : [ ('wniosek_status', 'aktualizacja_data' )]}),
@@ -47,6 +48,7 @@ class WniosekAdmin(admin.ModelAdmin):
     search_fields = ['adresat__nazwa', 'wniosek_status']
 
 
+@admin.register(Adresat)
 class AdresatAdmin(admin.ModelAdmin):
     fieldsets = [('Adresat', {'fields': ['nazwa']}),
                  #                 ('Lokalizacja', {'fields' : [ 'miasto', ('szerokosc_geo', 'dlugosc_geo')]})
@@ -59,11 +61,13 @@ class AdresatAdmin(admin.ModelAdmin):
     search_fields = ['nazwa', 'szerokosc_geo', 'dlugosc_geo']
 
 
+@admin.register(Miasto)
 class MiastoAdmin(admin.ModelAdmin):
     fields = ('nazwa', ('szerokosc_geo', 'dlugosc_geo'))
     list_display = ['nazwa', 'szerokosc_geo', 'dlugosc_geo']
 
 
+@admin.register(WniosekZalacznik)
 class WniosekZalacznikAdmin(admin.ModelAdmin):
     fields = ('wniosek', 'plik', 'opis')
     list_display = ['plik', 'wniosek', 'opis']
@@ -73,8 +77,3 @@ class WniosekZalacznikAdmin(admin.ModelAdmin):
     formfield_overrides = {
         models.TextField: {'widget': Textarea(attrs=Config['zalacznik']['textarea'])},
     }
-
-admin.site.register(WniosekZalacznik, WniosekZalacznikAdmin)
-admin.site.register(Wniosek, WniosekAdmin)
-admin.site.register(Adresat, AdresatAdmin)
-admin.site.register(Miasto, MiastoAdmin)
