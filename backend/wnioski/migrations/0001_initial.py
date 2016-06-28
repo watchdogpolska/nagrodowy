@@ -45,7 +45,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('opis', models.TextField(blank=True)),
                 ('wniosek_status', models.CharField(choices=[(b'IN-PROGRESS', b'W toku'), (b'IN-PROGRESS-PARTIALLY-FAILED', b'W toku - opinia cz\xc4\x99\xc5\x9bciowo negatywna'), (b'IN-PROGRESS-PARTIALLY-SUCCESSFUL', b'W toku - opinia cz\xc4\x99\xc5\x9bciowo pozytywna'), (b'CLOSED-SUCCESSFUL', b'Zako\xc5\x84czone pomy\xc5\x9blnie'), (b'CLOSED-MOSTLY-SUCCESSFUL', b'Zako\xc5\x84czone g\xc5\x82\xc3\xb3wnie pomy\xc5\x9blnie'), (b'CLOSED-FAILED', b'Zako\xc5\x84czone negatywnie'), (b'CLOSED-MOSTLY-FAILED', b'Zako\xc5\x84czone g\xc5\x82\xc3\xb3wnie negatywnie')], default=b'IN-PROGRESS', max_length=64)),
-                ('wprowadzenie_data', models.DateTimeField(default=datetime.datetime(2016, 6, 29, 1, 8, 49, 435033), verbose_name=b'Data wprowadzenia')),
+                ('wprowadzenie_data', models.DateTimeField(default=datetime.datetime.now, verbose_name=b'Data wprowadzenia')),
                 ('aktualizacja_data', models.DateTimeField(blank=True, null=True, verbose_name=b'Data ostatniej aktualizacji')),
                 ('adresat', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='wnioski.Adresat')),
             ],

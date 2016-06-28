@@ -53,7 +53,7 @@ class Wniosek(models.Model):
     adresat = models.ForeignKey(Adresat)
     opis = models.TextField(blank=True)
     wniosek_status = models.CharField(max_length=64, default='IN-PROGRESS', choices=WNIOSEK_STATUS)
-    wprowadzenie_data = models.DateTimeField('Data wprowadzenia', default=datetime.now())
+    wprowadzenie_data = models.DateTimeField('Data wprowadzenia', default=datetime.now)
     aktualizacja_data = models.DateTimeField('Data ostatniej aktualizacji', blank=True, null=True)
 
     class Meta:
