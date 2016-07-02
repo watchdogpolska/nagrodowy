@@ -51,12 +51,6 @@ Updated `url_XXXX` directives in the file:
 
 `* frontend/app/config.js`
 
-Setup your [Google map api key][google-map-api].
-
-Update Google map api key in file :
-
-`* frontend/app/app.js`
-
 ***
 
 ## Backend / Django
@@ -84,6 +78,23 @@ Restart http server.
 
 ***
 
+## Obtain your Google map api
+
+This step should be performed once everything is proven to be working after finishing with preceding steps.
+ 
+Setup your [Google map api key][google-map-api].
+
+Update Google map api key in file :
+
+`* frontend/app/app.js`
+
+***
+
+**Once everything is up and running I strongly recommend to create branch something like rel_0.1 and commit changes needed for deployment.
+**
+
+****
+
 # Further development
 
 # To do's
@@ -93,5 +104,3 @@ Contact with [author][author-mail]
 
 [author-mail]: mailto:purbanski@interia.pl
 [google-map-api]: https://developers.google.com/maps/documentation/javascript/get-api-key
-
-
