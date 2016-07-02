@@ -1,5 +1,7 @@
 #!/bin/sh
 
+python manage.py syncdb
+
 . ./functions
 
 insert_cities_sql=" \
