@@ -31,10 +31,6 @@ class WniosekZalacznikInline(admin.StackedInline):
 
 @admin.register(Wniosek)
 class WniosekAdmin(admin.ModelAdmin):
-    #     fieldsets = [ ('Podstawowe dane', {'fields' : ['adresat']}),  #, 'wprowadzenie_data' ]}),
-    #                   ('Status', {'fields' : [ ('wniosek_status', 'aktualizacja_data' )]}),
-    #                   ('Dodatkowe', {'fields' : ['opis']})
-    #                 ]
     fields = ('adresat', 'wniosek_status', 'opis')
     list_display = ['id', 'adresat', 'wniosek_status', 'aktualizacja_data', 'wprowadzenie_data']
     list_display_links = ('id', 'adresat')
@@ -42,7 +38,6 @@ class WniosekAdmin(admin.ModelAdmin):
     formfield_overrides = {
         models.TextField: {'widget': Textarea(attrs={'rows': 6, 'cols': 85})},
     }
-#     inlines = [WniosekHistoriaInline, WniosekZalacznikInline]
     inlines = [WniosekZalacznikInline]
 
     search_fields = ['adresat__nazwa', 'wniosek_status']
@@ -51,13 +46,10 @@ class WniosekAdmin(admin.ModelAdmin):
 @admin.register(Adresat)
 class AdresatAdmin(admin.ModelAdmin):
     fieldsets = [('Adresat', {'fields': ['nazwa']}),
-                 #                 ('Lokalizacja', {'fields' : [ 'miasto', ('szerokosc_geo', 'dlugosc_geo')]})
                  ('Lokalizacja', {'fields': [('szerokosc_geo', 'dlugosc_geo')]})
                  ]
-#     list_display = ['nazwa', 'miasto', 'szerokosc_geo', 'dlugosc_geo']
     list_display = ['nazwa', 'szerokosc_geo', 'dlugosc_geo']
     list_display_links = ['nazwa']
-
     search_fields = ['nazwa', 'szerokosc_geo', 'dlugosc_geo']
 
 
