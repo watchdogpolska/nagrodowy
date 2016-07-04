@@ -28,7 +28,7 @@ SECRET_KEY = '0&s=bbzdy&@pr3ngzh!qpj+8m-2g0&4%-i25d&5e92p9swv*=y'
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', ]
 
 
 # Application definition
@@ -81,7 +81,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-MEDIA_ROOT = "/var/www/virtuals/nagrodowy/backend/storage"
+MEDIA_ROOT = str(ROOT("storage"))
 MEDIA_URL = "/storage/"
 
 # Static files (CSS, JavaScript, Images)
