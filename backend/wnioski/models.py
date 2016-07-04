@@ -118,10 +118,15 @@ class WniosekZalacznik(models.Model):
     def __unicode__(self):
         return "%s" % (os.path.basename(str(self.plik)))
 
-    def get_as_obj(self):
+    @property
+    def filename(self):
         dir, filename = os.path.split(self.plik.path)
+        return filename
+
+    def get_as_obj(self):
+
         return {
-            'file': filename,
+            'file': self.filename,
             'description': self.opis,
             'to': self.wniosek.adresat.nazwa,
         }
