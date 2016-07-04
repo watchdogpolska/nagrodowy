@@ -1,6 +1,5 @@
 #!/bin/bash
 ./cleandb
-./syncdb
 ./setupdb
 
 rm -rf storage/*
