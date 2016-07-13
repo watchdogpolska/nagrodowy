@@ -2,15 +2,7 @@
 
 angular
 
-.module('myApp.map_view', [ 'ngRoute' ])
-
-.config([ '$routeProvider', function($routeProvider) {
-	$routeProvider.when('/map_view', {
-		templateUrl : 'map_view/map.html',
-		controller : 'MapViewCtrl'
-	});
-} ])
-
+.module('myApp.map_view', [])
 .controller(
 	"MapViewCtrl",
 	function($scope, $http, uiGmapGoogleMapApi, ServiceSettings) {
