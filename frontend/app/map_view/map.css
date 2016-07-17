@@ -1,19 +1,12 @@
 
 .angular-google-map {
 	height: 100%;
-	widht: 100%;
+	width: 100%;
 }
 
 .angular-google-map-container { 
 	height: 100%;
-	width: 95%;
 	margin: 0 auto;
-}
-
-#map-windows-container {
-	min-width: 250px;
-	width: auto;
-	max-width: 700px;
 }
 
 .marker-info-help-text {
