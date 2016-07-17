@@ -1,0 +1,129 @@
+
+.angular-google-map {
+	height: 100%;
+	width: 100%;
+}
+
+.angular-google-map-container { 
+	height: 100%;
+	margin: 0 auto;
+}
+
+.marker-info-help-text {
+	font-size: 11px;
+	font-style: italic;
+	max-width: 200px;
+}
+
+.marker-info-title,
+.marker-info-recipient,
+.marker-info-status,
+.marker-info-description {
+	font-size: 110%;
+	padding-bottom: 15px;
+	width:auto;
+	width: inherit;
+	max-width: inherit;
+}
+
+.marker-info-recipient,
+.marker-info-title {
+	font-weight: bold;
+}
+
+.marker-info-status {
+	font-weight: normal;
+}
+
+.marker-info-description {
+	font-weight: normal;
+	font-size: 85%;
+	height: auto;
+	max-height: 200px;
+	width: auto;
+	max-width: 500px;
+	overflow: auto;
+	margin-top: 2.5px;
+}
+
+.marker-files-cont {
+	height: auto;
+	min-height: 0px;
+	max-height: 150px;
+	overflow: auto;
+}
+
+.marker-file-cont {
+	width:100%;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+.marker-file-name, 
+.marker-file-description {
+/* 	display: inline;
+ */}
+	
+.marker-file-name {
+	font-weight: bold;
+}
+
+.marker-file-description {
+	font-weight: normal;
+	font-size: 85%;
+	
+}
+
+a.file-download:link,
+a.file-download:hover,
+a.file-download:active,
+a.file-download:visited {
+	color: green;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.file-download:hover {
+	color: #ff3311;
+}
+
+/* Map Window Status div styling - for different statuses types */
+
+.status-in-progress,
+.status-in-progress-partially-ok,
+.status-in-progress-partially-failed,
+.status-closed-failed, 
+.status-closed-mostly-failed,
+.status-closed-ok, 
+.status-closed-mostly-ok {
+	width : 80%;
+	height: auto;
+	margin: 10px auto 16px;
+	padding: 10px;
+	font-style: italic;
+	border-radius: 15px 50px 30px 50px;
+   	text-align: center;
+/*    	text-shadow: 1px 1px 0px #5d5d5d;
+ */}
+
+.status-in-progress,
+.status-in-progress-partially-ok,
+.status-in-progress-partially-failed {
+	color: #3ea7d7;
+	border: 1px solid #3ea7d7;
+	background-color: rgba(62, 167, 215, 0.1);
+}
+
+.status-closed-failed, 
+.status-closed-mostly-failed {
+	color: #fb686a;
+	border: 1px solid #a52d22;
+	background-color: rgba(165, 45, 34, 0.1);
+}
+
+.status-closed-ok, 
+.status-closed-mostly-ok {
+	color: #6bad01;
+	border: 1px solid #6bad01;
+	background-color: rgba(107, 173, 1, 0.1);
+}
