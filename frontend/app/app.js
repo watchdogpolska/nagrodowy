@@ -3,8 +3,6 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
   'myApp.map_view',
-//  'myApp.view2',
-  'myApp.version',
   'uiGmapgoogle-maps'
 ])
 
