@@ -28,7 +28,7 @@ SECRET_KEY = '0&s=bbzdy&@pr3ngzh!qpj+8m-2g0&4%-i25d&5e92p9swv*=y'
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', ]
+ALLOWED_HOSTS = [env('APP_DOMAIN'), ]
 
 
 # Application definition
@@ -81,10 +81,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-MEDIA_ROOT = str(ROOT("storage"))
-MEDIA_URL = "/storage/"
+MEDIA_ROOT = str(ROOT("media"))
+MEDIA_URL = "/media/"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
+STATIC_ROOT = str(ROOT("static"))
 STATIC_URL = '/static/'
