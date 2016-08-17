@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import os
 import environ
+
 ROOT = environ.Path(__file__) - 2
 env = environ.Env()
 
@@ -89,3 +91,15 @@ MEDIA_URL = "/media/"
 
 STATIC_ROOT = str(ROOT("static"))
 STATIC_URL = '/static/'
+
+
+# Raven settings
+
+if env('RAVEN_DSN', False):
+    import raven
+
+    INSTALLED_APPS += ('raven.contrib.django.raven_compat')
+    RAVEN_CONFIG = {
+        'dsn': env('RAVEN_DSN'),
+        'release': raven.fetch_git_sha(os.path.dirname(__file__)),
+    }
