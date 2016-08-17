@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 import os
 from datetime import datetime
-
 from django.db import models
 from django.db.models.signals import post_delete
 from django.dispatch import receiver
+from django.utils.encoding import force_text
 
 
 class Miasto(models.Model):
@@ -116,7 +116,7 @@ class WniosekZalacznik(models.Model):
         verbose_name_plural = "Załączniki do wniosków"
 
     def __unicode__(self):
-        return os.path.basename(self.plik.name)
+        return force_text(os.path.basename(self.plik.name))
 
     def get_as_obj(self):
         dir, filename = os.path.split(self.plik.path)
