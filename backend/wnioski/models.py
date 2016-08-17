@@ -13,7 +13,7 @@ class Miasto(models.Model):
     dlugosc_geo = models.FloatField('Długość geograficzna', blank=True, null=True)
 
     def __unicode__(self):
-        return "%s" % self.nazwa
+        return self.nazwa
 
     class Meta:
         verbose_name_plural = "Miasta"
@@ -116,7 +116,7 @@ class WniosekZalacznik(models.Model):
         verbose_name_plural = "Załączniki do wniosków"
 
     def __unicode__(self):
-        return "%s" % (os.path.basename(str(self.plik)))
+        return os.path.basename(self.plik.name)
 
     def get_as_obj(self):
         dir, filename = os.path.split(self.plik.path)
