@@ -30,7 +30,7 @@ SECRET_KEY = '0&s=bbzdy&@pr3ngzh!qpj+8m-2g0&4%-i25d&5e92p9swv*=y'
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = [env('APP_DOMAIN'), ]
+ALLOWED_HOSTS = [env('APP_DOMAIN', default="localhost"), ]
 
 
 # Application definition
@@ -95,11 +95,11 @@ STATIC_URL = '/static/'
 
 # Raven settings
 
-if env('RAVEN_DSN', False):
+if 'RAVEN_DSN' in os.environ:
     import raven
 
-    INSTALLED_APPS += ('raven.contrib.django.raven_compat')
+    INSTALLED_APPS += ('raven.contrib.django.raven_compat', )
     RAVEN_CONFIG = {
         'dsn': env('RAVEN_DSN'),
-        'release': raven.fetch_git_sha(os.path.dirname(__file__)),
+        'release': raven.fetch_git_sha(str(ROOT(".."))),
     }
