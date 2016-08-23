@@ -27,8 +27,8 @@ SECRET_KEY = '0&s=bbzdy&@pr3ngzh!qpj+8m-2g0&4%-i25d&5e92p9swv*=y'
 # DEBUG = True
 # TEMPLATE_DEBUG = True
 
-DEBUG = False
-TEMPLATE_DEBUG = False
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = [env('APP_DOMAIN', default="localhost"), ]
 

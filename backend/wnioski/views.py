@@ -33,7 +33,7 @@ def get_marker_details(request, markerId, callback):
     markerDetails = recs[0].get_map_marker_details()
 
     recs = WniosekZalacznik.objects.all().filter(wniosek=markerId)
-    filesDetails = [obj.get_as_obj() for obj in recs]
+    filesDetails = [obj.get_as_obj(request.build_absolute_uri) for obj in recs]
 
     data = {'marker': markerDetails,
             'files': filesDetails}
