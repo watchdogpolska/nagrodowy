@@ -84,20 +84,18 @@ angular
 		//----------------
 		// create marker
 		
-		var createMarker = function(i, status, lat, long, idKey) {
-			if (idKey == null) {
-				idKey = "id";
-			}
-
-			var ret = {
+		var createMarker = function(idMarker, status, lat, long) {
+			var 
+			idKey = "id",	
+			ret = {
 				latitude : lat,
 				longitude : long,
-				id : i,
+				id : idMarker,
 				// show : false,
 				icon : ServiceSettings.url_images + '/' + StatusMap[status].icon
 			};
 
-			ret[idKey + i] = i;
+			ret[idKey + idMarker] = idMarker;
 			return ret;
 		};
 		
@@ -114,9 +112,9 @@ angular
 		  			var m = "";
 		  			
 		  			if (r.lat != null && r.long != null ) {
-		  				m = createMarker(i+1, r.status, r.lat, r.long);
+		  				m = createMarker(r.id, r.status, r.lat, r.long);
 		  			} else {
-		  				m = createMarker(i+1, r.status, r.city.lat, r.city.long);
+		  				m = createMarker(r.id, r.status, r.city.lat, r.city.long);
 		  			}
 		  			
 		  			markers.push(m);
