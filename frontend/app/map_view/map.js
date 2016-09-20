@@ -81,24 +81,6 @@ angular
 				}
 			};
 
-		//----------------
-		// create marker
-		
-		var createMarker = function(idMarker, status, lat, long) {
-			var 
-			idKey = "id",	
-			ret = {
-				latitude : lat,
-				longitude : long,
-				id : idMarker,
-				// show : false,
-				icon : ServiceSettings.url_images + '/' + StatusMap[status].icon
-			};
-
-			ret[idKey + idMarker] = idMarker;
-			return ret;
-		};
-		
 		
 		//---------------
 		// Get map markers
@@ -107,14 +89,22 @@ angular
 		$http({method:'JSONP', url: url}).
 			success(function(data) {
 		  		var markers = [];
+		  		
 		  		for (var i=0, count=data.data.length; i<count; i++) {
-		  			var r = data.data[i];
-		  			var m = "";
-		  			
+		  			var 
+		  			r = data.data[i],
+		  			m = {
+		  					id	    : i+1,  // I'm not sure if it has to be sequential as it is down to google map angular framework
+		  					idPlace : r.id,
+		  					icon    : ServiceSettings.url_images + '/' + StatusMap[r.status].icon
+		  			};
+  			
 		  			if (r.lat != null && r.long != null ) {
-		  				m = createMarker(r.id, r.status, r.lat, r.long);
+	  					m["latitude"]  = r.lat;
+	  					m["longitude"] = r.long;
 		  			} else {
-		  				m = createMarker(r.id, r.status, r.city.lat, r.city.long);
+	  					m["latitude"]  = r.city.lat;
+	  					m["longitude"] = r.city.long;
 		  			}
 		  			
 		  			markers.push(m);
@@ -143,7 +133,7 @@ angular
 			
 			lastMarker = marker;
 			
-			var url = ServiceSettings.url_backend + '/get_marker_details/' + marker.id + '/callback=JSON_CALLBACK';
+			var url = ServiceSettings.url_backend + '/get_marker_details/' + marker.idPlace + '/callback=JSON_CALLBACK';
 			$http({method:'JSONP', url: url}).
 				success(function(data) {
 					var marker = data.data.marker,
