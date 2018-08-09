@@ -13,7 +13,9 @@ import os
 import environ
 
 ROOT = environ.Path(__file__) - 2
-env = environ.Env()
+env = environ.Env(
+    DEBUG=(bool, False)
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -27,8 +29,8 @@ SECRET_KEY = '0&s=bbzdy&@pr3ngzh!qpj+8m-2g0&4%-i25d&5e92p9swv*=y'
 # DEBUG = True
 # TEMPLATE_DEBUG = True
 
-DEBUG = True
-TEMPLATE_DEBUG = True
+DEBUG = env('DEBUG')
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = [env('APP_DOMAIN', default="localhost"), ]
 
@@ -63,7 +65,7 @@ WSGI_APPLICATION = 'nagrodowy.wsgi.application'
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db(default="mysql://nagrodowy:nagrodowy@localhost/")
+    'default': env.db(default="mysql://nagrodowy:nagrodowy@127.0.0.1/nagrodowy")
 }
 
 # Internationalization
@@ -103,3 +105,5 @@ if 'RAVEN_DSN' in os.environ:
         'dsn': env('RAVEN_DSN'),
         'release': raven.fetch_git_sha(str(ROOT(".."))),
     }
+
+
