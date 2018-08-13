@@ -106,4 +106,11 @@ if 'RAVEN_DSN' in os.environ:
         'release': raven.fetch_git_sha(str(ROOT(".."))),
     }
 
+# APM
+INSTALLED_APPS = INSTALLED_APPS + (
+    'elasticapm.contrib.django', )
+
+MIDDLEWARE_CLASSES = (
+    'elasticapm.contrib.django.middleware.TracingMiddleware',
+) + MIDDLEWARE_CLASSES
 

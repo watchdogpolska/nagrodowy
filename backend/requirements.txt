@@ -5,3 +5,4 @@ django-environ==0.4.0
 six==1.10.0
 wsgiref==0.1.2
 raven==5.24.3
+elastic-apm==3.0.0
